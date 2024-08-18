@@ -1,0 +1,63 @@
+Hi Dhishwari
+
+
+
+
+
+
+
+
+
+
+
+
+																	class Animal:
+																		def __init__(self, species):
+																			self.species = species
+																			print(f"Animal: {self.species}")
+
+																	class Dog(Animal):
+																		def __init__(self, breed):
+																			# Call the parent class constructor
+																			super().__init__('Dog')
+																			self.breed = breed
+																			print(f"Breed: {self.breed}")
+																			
+																		
+
+																	# Creating an object of the Dog class
+																	my_dog = Dog("abc")
+																	
+																	
+																	
+																	
+																	
+																	class Vehicle:
+																		def __init__(self)
+																	
+																		def start_engine(self):
+																			return "Engine started"
+
+																	class Car(Vehicle):
+																		def start_engine(self):
+																			# Extend the parent method
+																			parent_message = super().start_engine()
+																			return f"{parent_message}. Car engine is running"
+																			
+																	class Aeroplane(Vehicle):
+																		def start_engine(self):
+																			# Extend the parent method
+																			parent_message = super().start_engine()
+																			return f"{parent_message}. Car engine is running"
+																			
+																	class Train(Vehicle):
+																		def start_engine(self):
+																			# Extend the parent method
+																			parent_message = super().start_engine()
+																			return f"{parent_message}. Car engine is running"
+																			
+																	
+
+																	 v = Aeroplane()
+																	print(v.start_engine())
+																	
